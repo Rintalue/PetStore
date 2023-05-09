@@ -1,0 +1,12 @@
+
+.nav-link.active-link{
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.navbar-brand{
+  font-size: 30px;
+}
+.split{
+  color:var(--primary-color);
+  font-weight: bold;
+}

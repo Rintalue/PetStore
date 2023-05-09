@@ -1,0 +1,35 @@
+<div class="container mt-5 mb-5" xmlns="http://www.w3.org/1999/html">
+
+  <div class="row">
+
+    <div class="col-lg-6" *ngIf="productsData">
+      <a routerLink="../../products" class="btn-btn-sm btn-dark mb-3">Back</a>
+      <img src="{{productsData[0].petImg}}" width="100%" alt="pets"/>
+      <h1 class="mt-3">{{productsData[0].petName}}</h1>
+      <p>{{productsData[0].petDetail}}</p>
+    </div>
+
+    <div class="col-lg-6">
+      <h1>Tell Us More <span class="split">About You</span></h1>
+
+      <form (ngSubmit)="onAddInfo(f)" #f="ngForm">
+        <label>First Name</label>
+        <input type="text" ngModel name="first_name" class="form-control" placeholder="First Name" required/>
+        <label>LastName</label>
+        <input type="text" ngModel name="last_name" class="form-control" placeholder="Last Name" required/>
+        <label>Email</label>
+        <input type="text" ngModel name="email" class="form-control" placeholder="e.g,123@gmail.com" required/>
+        <label>PhoneNo</label>
+        <input type="text" ngModel name="phone_no" class="form-control" placeholder="e.g,254712345678" required/>
+        <label>IdNo</label>
+        <input type="text" ngModel name="id_no" class="form-control" placeholder="e.g,12345678" required/>
+        <label>Additional Message</label>
+       <textarea class="form-control" cols="10" rows="10"> </textarea>
+        <h6>By clicking "Adopt a Pet" below, you consent to allow us to store and process the personal information submitted above to provide you the content requested.</h6>
+        <button type="submit" class="btn-btn-md mt-3">Adopt a Pet</button>
+
+      </form>
+    </div>
+  </div>
+
+</div>

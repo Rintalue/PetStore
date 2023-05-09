@@ -1,0 +1,29 @@
+.petbox{
+  padding: 10px 10px;
+}
+.petbox img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+.petbox h1{
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+.petbox h1:hover {
+  color: var(--primary-color);
+}
+
+.adoptbtn {
+  text-decoration: none;
+  background-color: #000;
+  color: var(--primary-color);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
